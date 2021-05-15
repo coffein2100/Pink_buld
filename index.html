@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon32.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon16.ico" type="image/x-icon">
+  </head>
+  <body class="page">
+    <header class="page-header page-header--open">
+      <div class="page__wrapper">
+        <a class="page-header__logolink" href="index.html">
+        <svg width="147" height="40" class="page-header__logodesktop">
+          <use xlink:href="img/sprite.svg#logodesktop"></use>
+        </svg>
+        <svg width="145" height="40" class="page-header__logotablet">
+          <use xlink:href="img/sprite.svg#logotablet"></use>
+        </svg>
+        <svg width="74" height="23" class="page-header__logo">
+          <use xlink:href="img/sprite.svg#logomobile"></use>
+        </svg>
+        </a>
+        <nav class="main-nav main-nav--opened main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a href="catalog.html">
+                  Фотографии
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">
+                  Kонкурс
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a href="https://htmlacademy.ru/intensive/adaptive">
+                  HTML Academy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Приложение Pink - раскрась серые будни</h1>
+      <section class="intro">
+        <div class="intro__container">
+          <h2 class="visually-hidden">описание сервиса</h2>
+          <div class="intro__wrapper">
+            <p class="intro__head">
+              Взгляните на жизнь<br>иначе!
+            </p>
+          </div>
+          <div class="intro__wrapperbottom">
+            <div class="intro__wrapper">
+              <a class="intro__button" onclick="window.location.href = 'https://www.apple.com/ru/app-store/';">Скачать приложение</a>
+              <ul class="list intro__list">
+                <li class="list__item">
+                  <a href="https://www.apple.com/ru/app-store/">
+                    <svg width="47" height="56">
+                      <use xlink:href="img/sprite.svg#applelogo"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="list__item">
+                  <a href="https://play.google.com/store/apps;hl=ru?hl=ru&gl=US">
+                    <svg width="43" height="47">
+                      <use xlink:href="img/sprite.svg#androidlogo"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="list__item">
+                  <a href="https://www.microsoft.com/ru-RU/store/apps">
+                    <svg width="44" height="41">
+                      <use xlink:href="img/sprite.svg#microsoftlogo"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <p class="intro__available">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <div class="advantages__wrapper">
+          <p class="advantages__header">Устали от серости мегаполиса?<br class="advantages__br"><br class="advantages__br">Нам есть, что вам<br> предложить!</p>
+        </div>
+        <div class="advantages__bottom">
+          <div class="advantages__wrapper">
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <div class="advantages__imgcont">
+                  <img class="advantages__img" src="img/pinkup.png" srcset="img/pinkup@2x.png 2x" width="186" height="382" alt="телефон">
+                </div>
+                <h3 class="advantages__title">Поднимает настроение</h3>
+                <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="advantages__item">
+                <div class="advantages__imgcont">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/pinkchange.webp 1x, img/pinkchange@2x.webp 2x">
+                    <img class="advantages__img" src="img/pinkchange.png" srcset="img/pinkchange@2x.png 2x" width="186" height="382" alt="телефон">
+                  </picture>
+                </div>
+                <h3 class="advantages__title">Меняет мир вокруг</h3>
+                <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </li>
+              <li class="advantages__item">
+                <div class="advantages__imgcont">
+                  <img class="advantages__img" src="img/pinkhi.png" srcset="img/pinkhi@2x.png 2x" width="186" height="382" alt="телефон">
+                </div>
+                <h3 class="advantages__title">Заводит новых друзей</h3>
+                <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
+          </div>
+          <div class="study">
+            <div class="study__wrapper">
+              <h3 class="study__head">Эффект <br class="study__br">на 24 часа!</h3>
+              <p class="study__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+              <a class="study__link" href="#">Узнать больше об исследовании</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзовы</h2>
+        <div class="reviews__wrapper slider">
+          <div class="reviews__list">
+          <blockquote class="reviews__item slider__item">
+            <div class="reviews__author">
+              <cite class="reviews__authorname">Николай Петров</cite>
+              <p class="reviews__authorold">25 лет, водитель трамвая</p>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </div>
+          </blockquote>
+          </div>
+          <p class="reviews__toggleslist">
+          <button class="reviews__toggle reviews__toggle--current" type="button" aria-label="Первый слайд"></button>
+          <button class="reviews__toggle" type="button" aria-label="Второй слайд"></button>
+          <button class="reviews__toggle" type="button" aria-label="Третий слайд"></button>
+          </p>
+          <p class="reviews__toggleslistdesktop">
+          <button class="reviews__toggledesktop" type="button" aria-label="влево"></button>
+          <button class="reviews__toggledesktop reviews__toggledesktop--right" type="button" aria-label="вправо"></button>
+          </p>
+        </div>
+      </section>
+      <section class="price">
+        <h2 class="visually-hidden">Прайс</h2>
+        <div class="price__wrapper">
+          <table class="price__table slider">
+            <tr class="price__item slider__item">
+              <th class="price__header"></th>
+              <th class="price__header">База <span class="price__value">1,99 USD</span></th>
+              <th class="price__header price__header--current">СТАНДАРТ <span class="price__value">3,99 USD</span></th>
+              <th class="price__header">АНЛИМ <span class="price__value">9,99 USD</span></th>
+            </tr>
+            <tr class="price__item slider__item">
+              <td class="price__text price__text--noview">Розовый фильтр</td>
+              <td class="price__text"><span class="price__notext">Розовый фильтр</span></td>
+              <td class="price__text price__text--current"><span class="price__notext">Розовый фильтр</span></td>
+              <td class="price__text"><span class="price__notext">Розовый фильтр</span></td>
+            </tr>
+            <tr class="price__item slider__item">
+              <td class="price__text price__text--noview">Смайлики</td>
+              <td class="price__text price__text--no"><span class="price__notext">Смайлики</span></td>
+              <td class=" price__text price__text--current"><span class="price__notext">Смайлики</span></td>
+              <td class="price__text"><span class="price__notext">Смайлики</span></td>
+            </tr>
+            <tr class="price__item slider__item">
+              <td class="price__text price__text--noview">Комментарии</td>
+              <td class="price__text price__text--no"><span class="price__notext">Комментарии</span></td>
+              <td class="price__text price__text--no price__text--current"><span class="price__notext">Комментарии</span></td>
+              <td class="price__text"><span class="price__notext">Комментарии</span></td>
+            </tr>
+          </table>
+          <p class="price__toggles">
+            <button class="price__toggle" type="button" aria-label="Первый слайд"></button>
+            <button class="price__toggle price__toggle--current" type="button" aria-label="Текущий слайд"></button>
+            <button class="price__toggle" type="button" aria-label="Третий слайд"></button>
+          </p>
+        </div>
+      </section>
+      <section class="contacts">
+        <h2 class="contacts__head visually-hidden">Контактная информация</h2>
+        <div class="contacts__wrapper">
+          <h2 class="contacts__head">Остались вопросы?<br>Свяжитесь с нами!</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <h3 class="contacts__title">Звоните:</h3>
+              <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__title">Пишите:</h3>
+              <a class="contacts__email">mail@htmlacademy.ru</a>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__title">Приезжайте в гости:</h3>
+              <p class="contacts__adress">ул. Большая<br> Конюшенная, 19/8</p>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts__map">
+          <iframe title="map" aria-label="Map" class="contacts__mapview" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4928.279245213562!2d30.320121032849467!3d59.938527383603486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1618076700997!5m2!1sru!2sru" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <svg class="page-footer__logo">
+          <use xlink:href="img/sprite.svg#logofooter"></use>
+        </svg>
+        <svg class="page-footer__logodesktop">
+          <use xlink:href="img/sprite.svg#logofooterdesktop"></use>
+        </svg>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">
+                <span class="visually-hidden">Твитер</span>
+                <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">
+                <span class="visually-hidden">youtube</span>
+                <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="copyright__logo" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#academy"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+      var pagehead = document.querySelector('.page-header');
+      navMain.classList.remove('main-nav--nojs');
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+          pagehead.classList.add('page-header--open');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+          pagehead.classList.remove('page-header--open');
+        }
+      });
+    </script>
+  </body>
+</html>

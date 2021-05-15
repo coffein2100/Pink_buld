@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon32.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon16.ico" type="image/x-icon">
+  </head>
+  <body class="page">
+    <header class="page-header page-header--open">
+      <div class="page__wrapper">
+        <a class="page-header__logolink" href="index.html">
+          <svg width="147" height="40" class="page-header__logodesktop">
+            <use xlink:href="img/sprite.svg#logodesktop"></use>
+          </svg>
+          <svg width="145" height="40" class="page-header__logotablet">
+            <use xlink:href="img/sprite.svg#logotablet"></use>
+          </svg>
+          <svg width="74" height="23" class="page-header__logo">
+            <use xlink:href="img/sprite.svg#logomobile"></use>
+          </svg>
+        </a>
+        <nav class="main-nav main-nav--opened main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a href="catalog.html">
+                  Фотографии
+                </a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a href="form.html">
+                  Kонкурс
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a href="https://htmlacademy.ru/intensive/adaptive">
+                  HTML Academy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Заявка на конкурс</h1>
+      <section class="formintro">
+        <div class="formintro__wrapper">
+          <h2 class="formintro__header">Конкурс на самое безбашенное путешествие с Пинк</h2>
+        </div>
+      </section>
+      <section class="formcontest">
+        <h2 class="visually-hidden">Форма участия</h2>
+        <div class="formcontest__wrapper">
+          <p class="formcontest__header">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000  миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        </div>
+        <form class="formcontest__form form" method="get" action="https://echo.htmlacademy.ru" target="_blank">
+          <fieldset class="form__section form__section--first">
+          <div class="form__wrapper">
+            <label class="form__title form__title--first" for="secondname">ФАМИЛИЯ:</label>
+            <input class="form__datainput" id="secondname" type="text" name="secondname" placeholder="Укажите фамилию *">
+            <label class="form__title" for="name">ИМЯ:</label>
+            <input class="form__datainput form__datainput--name" id="name" type="text" name="name" placeholder="Введите ваше имя *">
+            <label class="form__title" for="firstname">ОТЧЕСТВО:</label>
+            <input class="form__datainput form__datainput--firstname" id="firstname" type="text" name="firstname" placeholder="Ну и отчество тоже">
+          </div>
+          </fieldset>
+          <fieldset class="form__section form__section--color">
+            <legend class="form__legend form__legend--progress">Ваши безбашенные достижения в путешествии</legend>
+            <p class="form__header">Ваши безбашенные достижения в путешествии</p>
+            <div class="form__wrapper">
+              <ul class="form__listprogress">
+                <li class="form__item form__item--progress">
+                  <input class="form__datacheck visually-hidden" type="checkbox" name="selfi" id="selfi" checked>
+                  <label class="form__label" for="selfi">Сделал селфи с акулой</label>
+                </li>
+                <li class="form__item form__item--progress">
+                  <input class="form__datacheck visually-hidden" type="checkbox" name="burn" id="burn" checked>
+                  <label class="form__label" for="burn">Обгорел на пляже</label>
+                </li>
+                <li class="form__item form__item--progress">
+                  <input class="form__datacheck visually-hidden" type="checkbox" name="ChuckNorris" id="ChuckNorris">
+                  <label class="form__label" for="ChuckNorris">Видел Чака Норриса</label>
+                </li>
+                <li class="form__item form__item--progress">
+                  <input class="form__datacheck visually-hidden" type="checkbox" name="souvenir" id="souvenir">
+                  <label class="form__label" for="souvenir">Накупил сувениров</label>
+                </li>
+                <li class="form__item form__item--progress">
+                  <input class="form__datacheck visually-hidden" type="checkbox" name="tower" id="tower" checked>
+                  <label class="form__label" for="tower">Удержал башню</label>
+                </li>
+                <li class="form__item form__item--progress">
+                  <input class="form__datacheck visually-hidden" type="checkbox" name="rout" id="rout">
+                  <label class="form__label" for="rout">Разгромил отель</label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="form__section form__section-contacts">
+            <legend class="form__legend">контактная информация</legend>
+            <div class="form__wrapper form__wrapper--contactsdesktiop">
+              <div class="form__wrapperphone">
+                <label class="form__title form__title--phone" for="phone">НОМЕР ТЕЛЕФОНА</label>
+                <input class="form__datainput form__datainput--phone" id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
+              </div>
+              <div class="form__wrapperemail">
+                <label class="form__title form__title--email" for="email">АДРЕС ПОЧТЫ</label>
+                <input class="form__datainput form__datainput--email" id="email" type="email" name="email" placeholder="Введите почту *">
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="form__section form__section--color">
+            <legend class="form__legend">С каким приложением путешествовали?</legend>
+            <p class="form__header">С каким приложением путешествовали?</p>
+            <div class="form__wrapper">
+              <ul class="form__listdevice">
+                <li class="form__itemdevice">
+                  <input class="form__dataradio visually-hidden" type="radio" name="device" value="IOS" id="IOS" checked>
+                  <label class="form__label form__label--radio" for="IOS">Pink для iOS</label>
+                </li>
+                <li class="form__itemdevice">
+                  <input class="form__dataradio visually-hidden" type="radio" name="device" value="Android" id="Android">
+                  <label class="form__label form__label--radio" for="Android">Pink на Android</label>
+                </li>
+                <li class="form__itemdevice">
+                  <input class="form__dataradio visually-hidden" type="radio" name="device" value="WindowsPhone" id="WindowsPhone">
+                  <label class="form__label form__label--radio" for="WindowsPhone">Windows Phone</label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="form__section form__section--emotion">
+            <legend class="form__legend">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
+            <p class="form__header form__header--emotion">ОПИШИТЕ СВОИ ЭМОЦИИ</p>
+            <div class="form__wrapper">
+              <textarea class="form__datainput form__datainput--big" rows="5" id="textlatters" name="laters" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </div>
+          </fieldset>
+          <div class="form__wrapperbottom">
+            <button class="button" type="submit">Отправить форму</button>
+            <p>
+            <small class="form__info">
+              <span class="form__specional">*</span> — обязательные <span class="form__specionaldesktop">для заполнения</span> поля
+            </small>
+            </p>
+          </div>
+        </form>
+      </section>
+      <section class="modalsuccess">
+        <div class="modalsuccess__wrapper">
+          <h2 class="modalsuccess__title">Ваша заявка отправлена</h2>
+          <p class="modalsuccess__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+        </div>
+        <div class="modalsuccess__wrapperbottom">
+          <div class="modalsuccess__wrapper">
+            <button class="modalsuccess__modal" type="button">ЗАКРЫТЬ ОКНО</button>
+          </div>
+        </div>
+      </section>
+      <section class="modalfailure">
+        <div class="modalfailure__wrapper">
+          <h2 class="modalfailure__title">Что-то пошло не так!</h2>
+          <p class="modalfailure__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        </div>
+        <div class="modalfailure__wrapperbottom">
+          <div class="modalfailure__wrapper">
+            <button class="modalfailure__modal modalfailure__modal--failure" type="button">ОК</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <svg class="page-footer__logo">
+          <use xlink:href="img/sprite.svg#logofooter"></use>
+        </svg>
+        <svg class="page-footer__logodesktop">
+          <use xlink:href="img/sprite.svg#logofooterdesktop"></use>
+        </svg>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">
+                <span class="visually-hidden">Твитер</span>
+                <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">
+                <span class="visually-hidden">youtube</span>
+                <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="copyright__logo" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#academy"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+      var pagehead = document.querySelector('.page-header');
+      navMain.classList.remove('main-nav--nojs');
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+          pagehead.classList.add('page-header--open');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+          pagehead.classList.remove('page-header--open');
+        }
+      });
+    </script>
+  </body>
+</html>

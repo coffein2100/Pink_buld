@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon32.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon16.ico" type="image/x-icon">
+  </head>
+  <body class="page">
+    <header class="page-header page-header--open">
+      <div class="page__wrapper">
+        <a class="page-header__logolink" href="index.html">
+          <svg width="147" height="40" class="page-header__logodesktop">
+            <use xlink:href="img/sprite.svg#logodesktop"></use>
+          </svg>
+          <svg width="145" height="40" class="page-header__logotablet">
+            <use xlink:href="img/sprite.svg#logotablet"></use>
+          </svg>
+          <svg width="74" height="23" class="page-header__logo">
+            <use xlink:href="img/sprite.svg#logomobile"></use>
+          </svg>
+        </a>
+        <nav class="main-nav main-nav--opened main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a href="catalog.html">
+                  Фотографии
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">
+                  Kонкурс
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a href="https://htmlacademy.ru/intensive/adaptive">
+                  HTML Academy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main">
+      <section class="catalogintro">
+        <div class="catalogintro__wrapper">
+          <h1 class="catalogintro__header">Фотографии пользователей</h1>
+        </div>
+      </section>
+      <section class="photousers">
+        <div class="photousers__wrapperheader">
+          <h2 class="photousers__header">Взгляните на фотографии, которые выкладывают пользователи!<br class="photousers__headbr"> Видите, как не хватает ваших?</h2>
+        </div>
+        <a class="photousers__linkpanorama" href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/panorama.jpg 1x, img/panorama@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img class="photousers__panoram" src="img/panorama-mobile.jpg" srcset="img/panorama-mobile.jpg 1x, img/panorama-mobile@2x.jpg 2x" alt="panorama">
+          </picture>
+        </a>
+        <div class="photousers__panoramcomments">
+          <blockquote class="photousers__commentpanoram">
+            <cite class="photousers__name">Анна <span class="photousers__timepost">(5 минут назад)</span></cite>
+            <p class="photousers__text photousers__text--panoram">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <span class="photousers__likes photousers__likes--panaram">Нравится: 215</span>
+          </blockquote>
+        </div>
+        <div class="photousers__wrapper">
+          <ul class="photousers__list">
+            <li class="photousers__item">
+              <blockquote class="photousers__comment">
+                <a class="photousers__link" href="#">
+                  <div class="photousers__photocontainer">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/car.jpg 1x, img/car@2x.jpg 2x">
+                      <source media="(min-width: 660px)" srcset="img/car-tablet.jpg 1x, img/car-tablet@2x.jpg 2x">
+                      <img class="photousers__photo" src="img/car-mobile.jpg" srcset="img/car-mobile.jpg 1x, img/car-mobile@2x.jpg 2x" alt="">
+                    </picture>
+                  </div>
+                </a>
+                <div class="photousers__wrappercomment photousers__wrappercomment--first">
+                  <cite class="photousers__name">Левон <span class="photousers__timepost">(5 часов назад)</span></cite>
+                  <p class="photousers__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                  <span class="photousers__likes">Нравится: 356</span>
+                </div>
+              </blockquote>
+            </li>
+            <li class="photousers__item">
+              <blockquote class="photousers__comment">
+                <a class="photousers__link" href="#">
+                  <div class="photousers__photocontainer">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/drums.jpg 1x, img/drums@2x.jpg 2x">
+                      <source media="(min-width: 660px)" srcset="img/drums-tablet.jpg 1x, img/drums-tablet@2x.jpg 2x">
+                      <img class="photousers__photo" src="img/drums-mobile.jpg" srcset="img/drums-mobile.jpg 1x, img/drums-mobile@2x.jpg 2x" alt="">
+                    </picture>
+                  </div>
+                </a>
+                <div class="photousers__wrappercomment">
+                  <cite class="photousers__name">Антон <span class="photousers__timepost">(12 часов назад)</span></cite>
+                  <p class="photousers__text">Соседи будут рады!</p>
+                  <span class="photousers__likes">Нравится: 666</span>
+                </div>
+              </blockquote>
+            </li>
+            <li class="photousers__item">
+              <blockquote class="photousers__comment">
+                <a class="photousers__link" href="#">
+                  <div class="photousers__photocontainer">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/windows.jpg 1x, img/windows@2x.jpg 2x">
+                      <source media="(min-width: 660px)" srcset="img/windows-tablet.jpg 1x, img/windows-tablet@2x.jpg 2x">
+                      <img class="photousers__photo" src="img/windows-mobile.jpg" srcset="img/windows-mobile.jpg 1x, img/windows-mobile@2x.jpg 2x" alt="">
+                    </picture>
+                  </div>
+                </a>
+                <div class="photousers__wrappercomment photousers__wrappercomment--advertising">
+                  <cite class="photousers__name">Борис <span class="photousers__timepost">(20 часов назад)</span></cite>
+                  <p class="photousers__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                  <span class="photousers__likes">Нравится: 215</span>
+                </div>
+              </blockquote>
+            </li>
+            <li class="photousers__item">
+              <blockquote class="photousers__comment">
+                <a class="photousers__link" href="#">
+                  <div class="photousers__photocontainer">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/cuban.jpg 1x, img/cuban@2x.jpg 2x">
+                      <source media="(min-width: 660px)" srcset="img/cuban-tablet.jpg 1x, img/cuban-tablet@2x.jpg 2x">
+                      <img class="photousers__photo" src="img/cuban-mobile.jpg" srcset="img/cuban-mobile.jpg 1x, img/cuban-mobile@2x.jpg 2x" alt="">
+                    </picture>
+                  </div>
+                </a>
+                <div class="photousers__wrappercomment">
+                  <cite class="photousers__name">Сергей <span class="photousers__timepost">(25 часов назад)</span></cite>
+                  <p class="photousers__text">Самая кубанская в мире!</p>
+                  <span class="photousers__likes">Нравится: 4</span>
+                </div>
+              </blockquote>
+            </li>
+            <li class="photousers__item">
+              <blockquote class="photousers__comment">
+                <a class="photousers__link" href="#">
+                  <div class="photousers__photocontainer">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/mountain.jpg 1x, img/mountain@2x.jpg 2x">
+                      <source media="(min-width: 660px)" srcset="img/mountain-tablet.jpg 1x, img/mountain-tablet@2x.jpg 2x">
+                      <img class="photousers__photo" src="img/mountain-mobile.jpg" srcset="img/mountain-mobile.jpg 1x, img/mountain-mobile@2x.jpg 2x" alt="">
+                    </picture>
+                  </div>
+                </a>
+                <div class="photousers__wrappercomment">
+                  <cite class="photousers__name">Максим <span class="photousers__timepost">(40 часов назад)</span></cite>
+                  <p class="photousers__text">Где снег-то?</p>
+                  <span class="photousers__likes">Нравится: 150</span>
+                </div>
+              </blockquote>
+            </li>
+            <li class="photousers__item">
+              <blockquote class="photousers__comment">
+                <a class="photousers__link" href="#">
+                  <div class="photousers__photocontainer">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/plane.jpg 1x, img/plane@2x.jpg 2x">
+                      <source media="(min-width: 660px)" srcset="img/plane-tablet.jpg 1x, img/plane-tablet@2x.jpg 2x">
+                      <img class="photousers__photo" src="img/plane-mobile.jpg" srcset="img/plane-mobile.jpg 1x, img/plane-mobile@2x.jpg 2x" alt="">
+                    </picture>
+                  </div>
+                </a>
+                <div class="photousers__wrappercomment">
+                  <cite class="photousers__name">Надежда <span class="photousers__timepost">(45 часов назад)</span></cite>
+                  <p class="photousers__text">Всем GM и взаимные лайки!</p>
+                  <span class="photousers__likes">Нравится: 2560</span>
+                </div>
+              </blockquote>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="userload">
+        <div class="userload__wrapperheader">
+          <h2 class="userload__header">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</h2>
+        </div>
+        <div class="userload__filterphoto">
+          <div class="userload__wrapper">
+            <picture>
+              <source media="(min-width: 660px)" srcset="img/winter-tablet.jpg 1x, img/winter-tablet@2x.jpg 2x">
+              <img class="userload__photo" src="img/winter-mobile.jpg" srcset="img/winter-mobile.jpg 1x, img/winter-mobile@2x.jpg 2x" alt="ваше изображение">
+            </picture>
+            <ul class="userload__filterlist filterlist">
+              <li class="filterlist__item">
+                <button class="filterlist__buttonscale" type="button" tabindex="1">
+                  <svg class="userload__filtericonscale userload__filtericonscale--current" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite.svg#scale"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="filterlist__item">
+                <button class="filterlist__buttonconsaturation" type="button" tabindex="1">
+                  <svg class="userload__filtericonsaturation" width="48" height="43" viewBox="0 0 48 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite.svg#saturation"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="filterlist__item">
+                <button class="filterlist__buttoncontrast" type="button" tabindex="1">
+                  <svg class="userload__filtericoncontrast" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite.svg#contrast"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+            <ul class="userload__scalelist scalelist">
+              <li class="scalelist__item">
+                <div class="userload__scale userload__scale--current">
+                  <div class="userload__bar">
+                </div>
+                <div class="userload__toggle"></div>
+                </div>
+              </li>
+              <li class="scalelist__item">
+                <div class="userload__scale">
+                  <div class="userload__bar">
+                </div>
+                <div class="userload__toggle userload__toggle--saturation"></div>
+                </div>
+              </li>
+              <li class="scalelist__item">
+                <div class="userload__scale">
+                  <div class="userload__bar">
+                </div>
+                <div class="userload__toggle userload__toggle--contrast"></div>
+                </div>
+              </li>
+            </ul>
+            <div class="userload__buttonwrapper">
+              <button class="userload__button" type="submit">Запостить</button>
+              <button class="userload__button userload__button--cancel" type="reset" disabled>Отмена</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <svg class="page-footer__logo">
+          <use xlink:href="img/sprite.svg#logofooter"></use>
+        </svg>
+        <svg class="page-footer__logodesktop">
+          <use xlink:href="img/sprite.svg#logofooterdesktop"></use>
+        </svg>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">
+                <span class="visually-hidden">Твитер</span>
+                <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">
+                <span class="visually-hidden">youtube</span>
+                <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="copyright__logo" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#academy"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+      var pagehead = document.querySelector('.page-header');
+      var userbuttonscale = document.querySelector('.filterlist__buttonscale');
+      var userbuttonconsaturation = document.querySelector('.filterlist__buttonconsaturation');
+      var userbuttoncontrast = document.querySelector('.filterlist__buttoncontrast');
+      var scale = document.querySelector('.userload__filtericonscale');
+      var consaturation = document.querySelector('.userload__filtericonsaturation');
+      var concontrast = document.querySelector('.userload__filtericoncontrast');
+      navMain.classList.remove('main-nav--nojs');
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+          pagehead.classList.add('page-header--open');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+          pagehead.classList.remove('page-header--open');
+        }
+      });
+      userbuttonconsaturation.addEventListener('click', function() {
+        consaturation.classList.add('userload__filtericonsaturation--current');
+        scale.classList.remove('userload__filtericonscale--current');
+        concontrast.classList.remove('userload__filtericoncontrast--current');
+      });
+      userbuttonscale.addEventListener('click', function() {
+        scale.classList.add('userload__filtericonscale--current');
+        consaturation.classList.remove('userload__filtericonsaturation--current');
+        concontrast.classList.remove('userload__filtericoncontrast--current');
+      });
+      concontrast.addEventListener('click', function() {
+        concontrast.classList.add('userload__filtericoncontrast--current');
+        scale.classList.remove('userload__filtericonscale--current');
+        consaturation.classList.remove('userload__filtericonsaturation--current');
+      });
+    </script>
+  </body>
+</html>
